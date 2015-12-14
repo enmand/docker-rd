@@ -1,0 +1,8 @@
+{
+	"ImportPath": "_/Users/enmand/Code/example-empire/rdempire",
+	"GoVersion": "go1.5.1",
+	"Packages": [
+		"./cmd/..."
+	],
+	"Deps": []
+}
