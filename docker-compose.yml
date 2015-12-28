@@ -1,0 +1,16 @@
+web:
+    image: docker-rd/web
+    ports:
+        - "8080:8080"
+    links:
+        - redis
+    command: /usr/local/bin/docker-rd_web
+ecs_info:
+    image: docker-rd/ecs_service
+    ports:
+        - "8081:8081"
+    links:
+        - redis
+    command: /usr/local/bin/docker-rd_ecs_info
+redis:
+    image: redis
